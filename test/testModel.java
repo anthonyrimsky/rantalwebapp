@@ -38,7 +38,7 @@ public class testModel {
         ArrayList<Apartment> appartments =  model.getApartments(filter);
         System.out.println(appartments.size());
         boolean test = appartments.size() == 3; //should be 3
-        test = appartments.size() == 2; //the test will fail now
+        //test = appartments.size() == 2; //the test will fail now
         assertTrue(test);
     }
 
