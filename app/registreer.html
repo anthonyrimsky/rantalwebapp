@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <form method="post" action="register">
+        <fieldset >
+            <legend>Register</legend>
+
+            <label for="username">
+                Username:
+            </label>
+            <input type="text" name="username" id="username" /><br />
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" name="password" id="password" /><br />
+
+            Account type:
+            <input type="radio" name="type" id="type_customer" value="c" checked="checked" />
+            <label for="type_customer">Customer</label>
+
+            <input type="radio" name="type" id="type_owner" value="o" />
+            <label for="type_owner">Owner</label> <br />
+
+            <input type="submit" value="Register" />
+        </fieldset>
+    </form>
+</body>
+</html>

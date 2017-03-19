@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+</head>
+<body>
+    <p>
+        <a href="listUsers">Beheer</a> // <a href="logout">Logout</a>
+    </p>
+
+    <br /><br />
+    <form method="get" action="searchRoom">
+        <fieldset>
+            <legend>Room search</legend>
+
+            <h3>Apartment size in Square Meters:</h3>
+            <label for="roomsizeMin">
+                Min:
+            </label>
+            <input type="text" name="roomsizeMin" id="roomsizeMin" size="3" />
+            <label for="roomsizeMax">
+                Max:
+            </label>
+            <input type="text" name="roomsizeMax" id="roomsizeMax" size="3" />
+            <br />
+
+            <label for="maxprice">
+                Max. rental price
+            </label>
+            <input type="text" name="maxprice" id="maxprice" size="3" />
+            <br />
+
+            <label for="location">
+                Location
+            </label>
+            <input type="text" name="location" id="location" />
+            <br />
+
+            <input type="submit" value="Search" />
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a new apartment</title>
+</head>
+<body>
+    <p>
+        <a href="showRooms">Back to overview</a> // <a href="logout">Logout</a>
+    </p>
+
+    <br /><br />
+    <form method="post" action="addRoom">
+        <fieldset>
+            <legend>Add a new apartment</legend>
+
+            <h3>Apartment size in Square Meters:</h3>
+            <label for="roomsize">
+                Size:
+            </label>
+            <input type="text" name="roomsize" id="roomsize" size="3" />
+            <br />
+
+            <label for="price">
+                Rental price
+            </label>
+            <input type="text" name="price" id="price" size="3" />
+            <br />
+
+            <label for="location">
+                Location
+            </label>
+            <input type="text" name="location" id="location" />
+            <br />
+
+            <input type="submit" value="Save" />
+        </fieldset>
+    </form>
+</body>
+</html>
