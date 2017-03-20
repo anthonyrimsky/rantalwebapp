@@ -79,5 +79,6 @@ sourceSets {
 
 war {
     from 'app'
+    archiveName  'docent2.war'
     webInf { from 'app/WEB-INF'}
 }
