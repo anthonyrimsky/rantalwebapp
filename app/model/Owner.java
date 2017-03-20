@@ -7,19 +7,13 @@ import java.util.ArrayList;
  */
 public class Owner extends User
 {
-    ArrayList<Apartment> ownedApartments;
 
     public Owner(String username, String password)
     {
         super(username, password);
 
-        ownedApartments = new ArrayList<>();
     }
 
-    public ArrayList<Apartment> getOwnedApartments()
-    {
-        return ownedApartments;
-    }
 
     @Override
     public String toString()

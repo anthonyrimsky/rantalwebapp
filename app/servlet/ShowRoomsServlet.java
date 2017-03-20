@@ -61,9 +61,18 @@ public class ShowRoomsServlet extends HttpServlet
         apartments = model.getApartments(roomFilter);
 
         // Show what we got
+        out.println("<!DOCTYPE html>\n" +
+                "<html lang=\"en\">\n" +
+                "<head>\n" +
+                "    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n" +
+                "    <meta charset=\"UTF-8\">\n" +
+                "    <title>Homepage</title>\n" +
+                "</head>\n" +
+                "<body style=\"padding:40px\">");
         out.print("<a href=\"addroom.html\">Add a new apartment</a> // " +
                 "<a href=\"listUsers\">Beheer</a> // " +
                 "<a href=\"logout\">Logout 2</a><br /><br />");
         out.print(model.apartmentsToHTML(apartments));
+        out.println("</body></html>");
     }
 }

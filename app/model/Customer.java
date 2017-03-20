@@ -7,19 +7,13 @@ import java.util.ArrayList;
  */
 public class Customer extends User
 {
-    ArrayList<Apartment> rentedApartments;
-
-    public Customer(String username, String password)
+  public Customer(String username, String password)
     {
         super(username, password);
 
-        rentedApartments = new ArrayList<>();
-    }
+     }
 
-    public ArrayList<Apartment> getRentedApartments()
-    {
-        return rentedApartments;
-    }
+
 
     @Override
     public String toString()
