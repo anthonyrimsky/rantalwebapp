@@ -34,12 +34,12 @@ public class AddRoomServlet extends HttpServlet
 
         if (username == null)
         {
-            response.sendRedirect("/index.html");
+            response.sendRedirect("index.html");
             return;
         }
         else if (model.getUser(username) instanceof Customer)
         {
-            response.sendRedirect("/index.html");
+            response.sendRedirect("index.html");
             return;
         }
 
@@ -86,6 +86,6 @@ public class AddRoomServlet extends HttpServlet
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        response.sendRedirect("/index.html");
+        response.sendRedirect("index.html");
     }
 }

@@ -39,12 +39,12 @@ public class ShowRoomsServlet extends HttpServlet
 
         if (username == null)
         {
-            response.sendRedirect("/index.html");
+            response.sendRedirect("index.html");
             return;
         }
         else if (model.getUser(username) instanceof Customer)
         {
-            response.sendRedirect("/index.html");
+            response.sendRedirect("index.html");
             return;
         }
 

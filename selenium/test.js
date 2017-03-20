@@ -43,7 +43,7 @@ describe('Testing the application', function(){
                             desiredCapabilities: {
                                 // You may choose other browsers
                                 // http://code.google.com/p/selenium/wiki/DesiredCapabilities
-                                browserName: 'firefox',
+                                browserName: 'phantomjs',
                                 pageLoadStrategy: 'eager'
                             },
                             // webdriverjs has a lot of output which is generally useless

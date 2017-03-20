@@ -35,7 +35,7 @@ public class ShowPersonsServlet extends HttpServlet
 
         if (username == null)
         {
-            response.sendRedirect("/index.html");
+            response.sendRedirect("index.html");
             return;
         }
 

@@ -37,7 +37,7 @@ public class LogoutServlet extends HttpServlet
         session.invalidate();
 
         // And go back to homepage
-        String redirectURL = "/index.html";
+        String redirectURL = "index.html";
         RequestDispatcher dispatcher = request.getRequestDispatcher(redirectURL);
         dispatcher.forward(request, response);
     }
